@@ -1,6 +1,8 @@
 h1 {
-  text-align: center;
   color: black;
+  font-size: 24px;
+  font-weight: 100;
+  line-height: 28px;
 }
 h2 {
   font-size: 40px;
@@ -99,4 +101,32 @@ h2 {
 }
 .font {
   font-size: 40px;
+}
+.weather-app {
+  margin: 30px auto;
+  max-width: 700px;
+  padding: 20px;
+  border: 1px solid #dadde1;
+  border-radius: 10px;
+}
+li {
+  list-style: none;
+}
+.weather {
+  margin: 30px;
+}
+.weather-temperature img {
+  margin-right: 5px;
+  height: 64px;
+  width: 64px;
+}
+.weather-temperature strong {
+  color: blue;
+  font-size: 64px;
+  font-weight: 1;
+}
+.weather-temperature units {
+  position: relative;
+  font-size: 16px;
+  top: -34px;
 }

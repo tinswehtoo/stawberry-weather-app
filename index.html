@@ -20,95 +20,99 @@
   <body
     background="https://images.pexels.com/photos/907485/pexels-photo-907485.jpeg"
   >
-    <h1 id="city">London</h1>
-    <h2>
-      <div class="row">
-        <div class="col-4">France</div>
-        <div class="col">
-          <i class="fa-solid fa-cloud-sun-rain fa-bounce Sunny"></i>
-        </div>
-        <div class="col-4">
-          <div class="temp" id="temp-now">30</div>
-          <span class="temp-unit" id="temp-unit"
-            ><a href="#" id="celsius-link">°C|</a>
-            <a href="#" id="fahrenhiet-link">°F</a>
-          </span>
-        </div>
-      </div>
-    </h2>
     <div class="container">
-      <h3 class="degree">//Cloudy23°C</h3>
-      <form id="search-city">
-        <input id="search-city-input" type="text" placeholder="Enter a city" />
-        <button>
-          <i class="fa-solid fa-magnifying-glass fa-fade icon"></i>
-        </button>
-        <button id="current-location">Current</button>
-      </form>
-      <br />
-      <h4 class="font">Thursday , 3:30</h4>
-      <div class="weather">
+      <div class="weather-app">
+        <h1 id="city">London</h1>
+        <form id="search-city">
+          <input
+            id="search-city-input"
+            type="text"
+            placeholder="Enter a city"
+          />
+          <button>
+            <i class="fa-solid fa-magnifying-glass fa-fade icon"></i>
+          </button>
+          <button id="current-location">Current</button>
+        </form>
+        <br />
+        <ul>
+          <li>Last updated: Friday :05:00</li>
+          <li>clear sky</li>
+        </ul>
         <div class="row">
-          <div class="class-2"></div>
-          <div class="card" style="width: 6rem">
-            ....
-            <div class="card-body">
-              <h5 class="card-title">Tue</h5>
-              <i class="fa-solid fa-cloud cloud"></i>
-              <p class="card-text">20°C</p>
+          <div class="col-6">
+            <div class="clearfix weather-temperature">
+              <img
+                src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
+                alt="clear"
+                class="float-left"
+              />
+              <div class="float-left">
+                <strong>12</strong>
+                <span class="units">°C| <a href="#">°F</a></span>
+              </div>
             </div>
           </div>
-          <div class="card" style="width: 6rem">
-            <div class="card-body">
-              <h5 class="card-title">Wed</h5>
-              <i class="fa-solid fa-sun sun"></i>
-              <p class="card-text">29°C</p>
-            </div>
+          <div class="col-6">
+            <ul>
+              <li>Humidity:73%</li>
+              <li>Wind: 2km/h</li>
+            </ul>
           </div>
-          <div class="card" style="width: 6rem">
-            <div class="card-body">
-              <h5 class="card-title">Thur</h5>
-              <i class="fa-solid fa-cloud-sun-rain rain"></i>
-              <p class="card-text">22°C</p>
+        </div>
+
+        <div class="weather">
+          <div class="row">
+            <div class="class-2"></div>
+            <div class="card" style="width: 6rem">
+              <div class="card-body">
+                <h5 class="card-title">Tue</h5>
+                <i class="fa-solid fa-cloud cloud"></i>
+                <p class="card-text">20°C</p>
+              </div>
             </div>
-          </div>
-          <div class="card" style="width: 6rem">
-            <div class="card-body">
-              <h5 class="card-title">Fri</h5>
-              <i class="fa-solid fa-cloud-showers-heavy heavy"></i>
-              <p class="card-text">19°C</p>
+            <div class="card" style="width: 6rem">
+              <div class="card-body">
+                <h5 class="card-title">Wed</h5>
+                <i class="fa-solid fa-sun sun"></i>
+                <p class="card-text">29°C</p>
+              </div>
             </div>
-          </div>
-          <div class="card" style="width: 6rem">
-            <div class="card-body">
-              <h5 class="card-title">Sat</h5>
-              <i class="fa-solid fa-cloud-moon fa-bounce moon"></i>
-              <p class="card-text">18°C</p>
+            <div class="card" style="width: 6rem">
+              <div class="card-body">
+                <h5 class="card-title">Thur</h5>
+                <i class="fa-solid fa-cloud-sun-rain rain"></i>
+                <p class="card-text">22°C</p>
+              </div>
             </div>
-          </div>
-          <div class="card" style="width: 6rem">
-            <div class="card-body">
-              <h5 class="card-title">Sun</h5>
-              <i class="fa-solid fa-cloud-showers-water water"></i>
-              <p class="card-text">15°C</p>
+            <div class="card" style="width: 6rem">
+              <div class="card-body">
+                <h5 class="card-title">Fri</h5>
+                <i class="fa-solid fa-cloud-showers-heavy heavy"></i>
+                <p class="card-text">19°C</p>
+              </div>
+            </div>
+            <div class="card" style="width: 6rem">
+              <div class="card-body">
+                <h5 class="card-title">Sat</h5>
+                <i class="fa-solid fa-cloud-moon fa-bounce moon"></i>
+                <p class="card-text">18°C</p>
+              </div>
+            </div>
+            <div class="card" style="width: 6rem">
+              <div class="card-body">
+                <h5 class="card-title">Sun</h5>
+                <i class="fa-solid fa-cloud-showers-water water"></i>
+                <p class="card-text">15°C</p>
+              </div>
             </div>
           </div>
         </div>
+        <a href="https://github.com/tinswehtoo/stawberry-weather-app.git"
+          >Open source code</a
+        >by code Tin Swe Htoo
       </div>
-      <br />
-      <p class="color">
-        Humidity<span id="Humidity"></span>%<br />
-        Visibility:Moderate
-        <span class="compass"
-          ><i class="fa-regular fa-compass fa-spin"></i
-        ></span>
-        <span class="past"> Wind direction:SW</span>
-        <br />
-      </p>
     </div>
-    <a href="https://github.com/tinswehtoo/stawberry-weather-app.git"
-      >Open source code</a
-    >by code Tin Swe Htoo
   </body>
   <script src="src/index.js"></script>
 </html>
