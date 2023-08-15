@@ -1,21 +1,12 @@
 h1 {
-  color: black;
+  color: yellow;
   font-size: 24px;
   font-weight: 100;
   line-height: 28px;
 }
-h2 {
-  font-size: 40px;
-  color: greenyellow;
-}
 .Sunny {
   color: green;
   font-size: 80px;
-}
-.units {
-  position: relative;
-  top: -34px;
-  font-size: 20px;
 }
 .degree {
   position: absolute;
@@ -111,6 +102,7 @@ h2 {
 }
 li {
   list-style: none;
+  text-transform: capitalize;
 }
 .weather {
   margin: 30px;
@@ -125,7 +117,7 @@ li {
   font-size: 64px;
   font-weight: 1;
 }
-.weather-temperature units {
+.weather-temperature .units {
   position: relative;
   font-size: 16px;
   top: -34px;

@@ -15,6 +15,7 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
   </head>
   <body
@@ -22,7 +23,7 @@
   >
     <div class="container">
       <div class="weather-app">
-        <h1 id="city">London</h1>
+        <h1 id="city"></h1>
         <form id="search-city">
           <input
             id="search-city-input"
@@ -36,8 +37,8 @@
         </form>
         <br />
         <ul>
-          <li>Last updated: Friday :05:00</li>
-          <li>clear sky</li>
+          <li>Last updated: <span id="date"></span></li>
+          <li id="description"></li>
         </ul>
         <div class="row">
           <div class="col-6">
@@ -48,19 +49,18 @@
                 class="float-left"
               />
               <div class="float-left">
-                <strong>12</strong>
+                <strong id="temperature"></strong>
                 <span class="units">°C| <a href="#">°F</a></span>
               </div>
             </div>
           </div>
           <div class="col-6">
             <ul>
-              <li>Humidity:73%</li>
-              <li>Wind: 2km/h</li>
+              <li>Humidity: <span id="humidity"></span>%</li>
+              <li>Wind: <span id="wind"></span>km/h</li>
             </ul>
           </div>
         </div>
-
         <div class="weather">
           <div class="row">
             <div class="class-2"></div>
