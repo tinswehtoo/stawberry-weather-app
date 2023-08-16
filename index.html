@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <title>weahter</title>
+    <title>stawberry-weather-app</title>
     <script
       src="https://kit.fontawesome.com/68d613199a.js"
       crossorigin="anonymous"
@@ -18,9 +18,7 @@
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
   </head>
-  <body
-    background="https://images.pexels.com/photos/907485/pexels-photo-907485.jpeg"
-  >
+  <body>
     <div class="container">
       <div class="weather-app">
         <h1 id="city"></h1>
@@ -68,57 +66,29 @@
             </ul>
           </div>
         </div>
-        <div class="weather">
+        <div class="weather-forecast">
           <div class="row">
-            <div class="class-2"></div>
-            <div class="card" style="width: 6rem">
-              <div class="card-body">
-                <h5 class="card-title">Tue</h5>
-                <i class="fa-solid fa-cloud cloud"></i>
-                <p class="card-text">20°C</p>
+            <div class="col-2">
+              <div class="weather-forecast-date">Thu</div>
+              <img
+                src="https://openweathermap.org/img/wn/04d@2x.png"
+                alt=""
+                width="42"
+              />
+              <div class="weather-forecsat-temperatures">
+                <span class="weather-forecast-temperature-max">18° </span>
+                <span class="weather-forecast-temperature-min">12°</span>
               </div>
-            </div>
-            <div class="card" style="width: 6rem">
-              <div class="card-body">
-                <h5 class="card-title">Wed</h5>
-                <i class="fa-solid fa-sun sun"></i>
-                <p class="card-text">29°C</p>
-              </div>
-            </div>
-            <div class="card" style="width: 6rem">
-              <div class="card-body">
-                <h5 class="card-title">Thur</h5>
-                <i class="fa-solid fa-cloud-sun-rain rain"></i>
-                <p class="card-text">22°C</p>
-              </div>
-            </div>
-            <div class="card" style="width: 6rem">
-              <div class="card-body">
-                <h5 class="card-title">Fri</h5>
-                <i class="fa-solid fa-cloud-showers-heavy heavy"></i>
-                <p class="card-text">19°C</p>
-              </div>
-            </div>
-            <div class="card" style="width: 6rem">
-              <div class="card-body">
-                <h5 class="card-title">Sat</h5>
-                <i class="fa-solid fa-cloud-moon fa-bounce moon"></i>
-                <p class="card-text">18°C</p>
-              </div>
-            </div>
-            <div class="card" style="width: 6rem">
-              <div class="card-body">
-                <h5 class="card-title">Sun</h5>
-                <i class="fa-solid fa-cloud-showers-water water"></i>
-                <p class="card-text">15°C</p>
               </div>
             </div>
           </div>
         </div>
+      </div>
+      <small class="link">
         <a href="https://github.com/tinswehtoo/stawberry-weather-app.git"
           >Open source code</a
         >by code Tin Swe Htoo
-      </div>
+      </small>
     </div>
   </body>
   <script src="src/index.js"></script>
