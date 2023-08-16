@@ -127,3 +127,10 @@ li:first-letter {
 form {
   margin: 20px;
 }
+.weather-temperature .active {
+  color: black;
+  cursor: default;
+}
+.weather-temperature.axtive:hover {
+  text-decoration: none;
+}
