@@ -66,3 +66,7 @@ form {
 .weather-forecast-temperature-min {
   opacity: 0.5;
 }
+.color {
+  color: greenyellow;
+  text-decoration-line: underline;
+}
